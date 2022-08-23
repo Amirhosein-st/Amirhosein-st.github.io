@@ -1,1 +1,1025 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-subject : rgb(82,89,96) ;
+    --color-c2 : rgb(137,142,147) ;
+    --color-c3 : rgb(174,174,174) ;
+    --color-and : rgb(240,189,40) ;
+}
 
+@font-face {
+    font-family: 'my-font-1';
+    src: url('https://fonts.gstatic.com/s/metrophobic/v19/sJoA3LZUhMSAPV_u0qwiAQ-O5X8.woff2');
+}
+
+body {
+    font-family: 'my-font-1';
+}
+
+.head {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.head .logo {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.head .logo .logoback {
+    width: 1210px;
+    height: 90px;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.head .logo .logoback .piclogo {
+    background-image: url('pics 1/logo-construction.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 200px;
+    width: 196px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.head .logo .logoback .tw-dr {
+    float: right;
+    line-height: 90px;
+}
+
+.head .logo .logoback .tw-dr .tw {
+    color: gray;
+    position: absolute;
+    right: 35px;
+}
+
+.head .logo .logoback .tw-dr .tw i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(165, 42, 42, 0);
+}
+
+.head .logo .logoback .tw-dr .tw i:hover {
+    background-color: rgb(70, 212, 254);
+    color: white;
+}
+
+.head .logo .logoback .tw-dr .dr {
+    color: gray;
+}
+.head .logo .logoback .tw-dr .dr i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(165, 42, 42, 0);
+}
+.head .logo .logoback .tw-dr .dr i:hover {
+    background-color: rgb(228, 72, 133);
+    color: white;
+}
+
+.head .menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(44, 53, 61);
+    clear: both;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.head .menu .menuback {
+    width: 1210px;
+    height: 50px;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.head .menu .menuback ul li {
+    list-style: none;
+    display: inline;
+    line-height: 45px;
+    padding-right: 38px;
+}
+
+.head .menu .menuback ul li:first-child {
+    padding-left: 30px;
+}
+
+.head .menu .menuback ul li a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.head .menu .menuback ul li a:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.head .menu .menuback .search {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-right: 35px;
+    cursor: pointer;
+}
+
+.main-album {
+    width: 100%;
+    height: 42vw;
+}
+
+.main-album .album-pics {
+    width: 100%;
+    height: 100%;
+    background-image: url("pics 1/superb-backyard-1500x630.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.main-album .album-pics .back-album-content {
+    width: 1210px;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.main-album .album-pics .album-content {
+    height: fit-content;
+    width: 40%;
+    position: relative;
+}
+
+.main-album .album-pics .album-content h1 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.main-album .album-pics .album-content p {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.main-album .album-pics .album-content a {
+    width: auto;
+    height: auto;
+    padding: 10px 30px 13px;
+    font-size: 13px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.main-album .album-pics .album-content .tra-bot {
+    border: 3px solid white;
+    background-color: transparent;
+}
+
+.main-album .album-pics .album-content .yell-bot {
+    background-color: rgb(239, 187, 32);
+    position: absolute;
+    left: 35%;
+    transform: translate(0, -20%);
+    border: 3px solid rgb(239, 187, 32);
+}
+
+.main-album .album-pics .album-content a:hover {
+    opacity: 90%;
+    transition: 0.5s;
+}
+
+.head .detail-back {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 191, 0);
+}
+
+.head .detail-back .detail {
+    width: 1210px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: rgb(255, 191, 0);
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.head .detail p {
+    width: 70%;
+    font-size: 30px;
+    color: white;
+}
+
+.head .detail a {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    padding: 15px 30px 13px;
+    font-size: 13px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+}
+
+.head .detail a:hover {
+    opacity: 75%;
+    transition: 0.5s;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.main .OUR-SERVICES {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main .OUR-SERVICES .subject-services {
+    height: 155px;
+    width: 100%;
+    background-color: white;
+    font-size: 28px;
+    text-align: center;
+    line-height: 155px;
+    float: left;
+    position: absolute;
+    color: var(--color-subject);
+}
+.main .OUR-SERVICES .subject-services::after{
+    content: '';
+    width: 55px;
+    height: 1px;
+    border-bottom: 2.5px solid rgb(239,187,32);
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50% ,0);
+}
+
+.main .OUR-SERVICES .services-back {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 155px;
+}
+
+.main .OUR-SERVICES .services {
+    width: 1210px;
+    height: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.main .OUR-SERVICES .services .serv {
+    width: 30%;
+    height: 380px;
+    float: left;
+    position: relative;
+    background-color: white;
+}
+
+.t-l-serv,
+.t-m-serv {
+    margin-right: 5%;
+}
+
+.b-l-serv,
+.b-m-serv {
+    margin-right: 5%;
+}
+
+.t-l-serv,
+.t-m-serv,
+.t-r-serv {
+    margin-bottom: 40px;
+}
+
+.main .OUR-SERVICES .services .serv-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8.5em;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .OUR-SERVICES .services .serv-pic::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.main .OUR-SERVICES .services .serv-pic:hover::after {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.461);
+}
+
+.main .OUR-SERVICES .services .t-l-serv-pic {
+    background-image: url("pics 1/scale-ruler-on-blueprints-845x321.jpg");
+}
+
+.main .OUR-SERVICES .services .t-m-serv-pic {
+    background-image: url("pics 1/construction-site-machines-845x321.jpg");
+}
+
+.main .OUR-SERVICES .services .t-r-serv-pic {
+    background-image: url("pics 1/cropped-hand-of-a-carpenter-845x321.jpg");
+}
+
+.main .OUR-SERVICES .services .b-l-serv-pic {
+    background-image: url("pics 1/architect-handling-keys-to-a-couple-845x321.jpg");
+}
+
+.main .OUR-SERVICES .services .b-m-serv-pic {
+    background-image: url("pics 1/urban-development-845x321.jpg");
+}
+
+.main .OUR-SERVICES .services .b-r-serv-pic {
+    background-image: url("pics 1/modern-home-845x321.jpg");
+}
+
+.main .OUR-SERVICES .services .serv h1 {
+    position: absolute;
+    top: 53%;
+    font-size: 20px;
+    color: var(--color-c2);
+    font-weight: 300;
+}
+.main .OUR-SERVICES .services .serv h1::after{
+    content: '';
+    width: 55px;
+    height: 1px;
+    border-bottom: 2px solid rgb(239,187,32);
+    position: absolute;
+    top: 170%;
+    left: 0;
+}
+
+.main .OUR-SERVICES .services .serv p {
+    position: absolute;
+    top: 73%;
+    line-height: 25px;
+    font-weight: 300;
+    color: var(--color-c3);
+}
+
+.main .WHY-US {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main .WHY-US .subject-why {
+    height: 110px;
+    width: 100%;
+    background-color: rgb(44, 53, 61);
+    font-size: 28px;
+    text-align: center;
+    line-height: 155px;
+    float: left;
+    position: absolute;
+    top: 150px;
+    color: white;
+}
+.main .WHY-US .subject-why::after{
+    content: '';
+    width: 55px;
+    height: 1px;
+    border-bottom: 2.5px solid rgb(239,187,32);
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50% ,0);
+}
+
+.main .WHY-US .why-back {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 260px;
+    background-color: rgb(44, 53, 61);
+}
+
+.main .WHY-US .whyus {
+    width: 1210px;
+    height: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.main .WHY-US .whyus .why {
+    width: 30%;
+    height: 185px;
+    float: left;
+    position: relative;
+    color: white;
+}
+
+.t-m-why,
+.t-l-why,
+.b-m-why,
+.b-l-why {
+    margin-right: 5%;
+}
+
+.main .WHY-US .why-back .whyus .i-why {
+    height: 65px;
+    width: 65px;
+    border: 1.5px solid rgba(155, 155, 155, 0.589);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.main .WHY-US .why-back .whyus .i-why i {
+    color: rgb(241, 241, 241);
+}
+
+.main .WHY-US .why-back .whyus .why h1 {
+    font-size: 18px;
+    position: absolute;
+    left: 85px;
+    top: 55px;
+}
+
+
+.main .WHY-US .why-back .whyus .why p {
+    font-size: 15px;
+    position: absolute;
+    left: 90px;
+    top: 100px;
+}
+
+.main .FEATURED-WORK {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+}
+
+.main .FEATURED-WORK .subject-fea {
+    height: 155px;
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    line-height: 155px;
+    float: left;
+    position: absolute;
+    color: var(--color-subject);
+}
+.main .FEATURED-WORK .subject-fea::after{
+    content: '';
+    width: 55px;
+    height: 1px;
+    border-bottom: 2.5px solid rgb(239,187,32);
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50% ,0);
+}
+
+.main .FEATURED-WORK .fea-back {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 155px;
+}
+
+.main .FEATURED-WORK .fea-back .featured {
+    width: 1210px;
+    height: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea {
+    width: 32.3%;
+    height: 320px;
+    float: left;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.t-m-fea,
+.t-l-fea,
+.b-m-fea,
+.b-l-fea {
+    margin-right: 1.5%;
+}
+
+.t-l-fea,
+.t-m-fea,
+.t-r-fea {
+    margin-bottom: 1.5%;
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .fea-pic {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    transform: scale(1);
+    transition: 0.6s;
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .fea-pic:hover {
+    transform: scale(1.04);
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .t-l-fea-pic {
+    background-image: url("pics 1/house-interior-705x405.jpg");
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .t-m-fea-pic {
+    background-image: url("pics 1/architect-handling-keys-to-a-couple-705x598.jpg");
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .t-r-fea-pic {
+    background-image: url("pics 1/urban-development-705x472.jpg");
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .b-l-fea-pic {
+    background-image: url("pics 1/house-mansion-705x472.jpg");
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .b-m-fea-pic {
+    background-image: url("pics 1/superb-backyard-705x454.jpg");
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .b-r-fea-pic {
+    background-image: url("pics 1/modern-home-705x470.jpg");
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .fea-pic::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.27);
+    transition: 0.4s;
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .fea-pic:hover:after {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .det-pics {
+    background-color: rgba(255, 255, 255, 0.933);
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 100%;
+    transform: translate(0, 0);
+    transition: 0.2s;
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea .det-pics p {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--color-subject);
+}
+
+.main .FEATURED-WORK .fea-back .featured .fea:hover .det-pics {
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+}
+
+.main .CUSTOMERS-PARTNERS {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 500px;
+}
+
+.main .CUSTOMERS-PARTNERS .subject-cus {
+    height: 130px;
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    line-height: 155px;
+    float: left;
+    position: absolute;
+    transform: translate(0 , -50%);
+    color: var(--color-subject);
+}
+
+.main .CUSTOMERS-PARTNERS .subject-cus::after{
+    content: '';
+    width: 55px;
+    height: 1px;
+    border-bottom: 2.5px solid rgb(239,187,32);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50% ,0);
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 65px;
+    float: left;
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers {
+    width: 1210px;
+    height: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus {
+    width: 25%;
+    height: 150px;
+    float: left;
+    color: white;
+    border: 1.5px rgb(226, 226, 226) solid;
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus .cus-pic {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus .t-1-cus-pic {
+    background-image: url("pics 1/envato.png");
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus .t-2-cus-pic {
+    background-image: url("pics 1/microlancer.png");
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus .t-3-cus-pic {
+    background-image: url("pics 1/themeforest.png");
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus .t-4-cus-pic {
+    background-image: url("pics 1/wpml.png");
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus .b-1-cus-pic {
+    background-image: url("pics 1/wordpress.png");
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus .b-2-cus-pic {
+    background-image: url("pics 1/bbpress.png");
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus .b-3-cus-pic {
+    background-image: url("pics 1/dribbble.png");
+}
+
+.main .CUSTOMERS-PARTNERS .cus-back .customers .cus .b-4-cus-pic {
+    background-image: url("pics 1/kriesi.png");
+}
+
+.main .foot {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 420px;
+}
+.main .foot .foot-1 {
+    width: 100%;
+    height: 340px;
+    background-color: rgb(44, 53, 61);
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .foot-1 .foot-1-back {
+    width: 1210px;
+    height: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4%;
+}
+
+.main .foot-1 .foot-1-back .foot-box-back {
+    height: 100%;
+    width: 22%;
+    position: relative;
+}
+
+.main .foot-1 .foot-1-back .foot-box {
+    width: 100%;
+    height: auto;
+    background-color: rgb(44, 53, 61);
+    position: absolute;
+    top: 15%;
+    color: white;
+}
+
+.main .foot-1 .foot-1-back .foot-box .subject-foot {
+    width: 100%;
+    height: auto;
+    font-size: 16.5px;
+    font-weight: 600;
+    border-top: 1.5px rgb(91, 100, 107) solid;
+    border-bottom: 1.5px rgb(91, 100, 107) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main .foot-1 .foot-1-back .foot-box .text-int {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    line-height: 25px;
+}
+
+.main .foot-1 .foot-1-back .foot-box .social {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.main .foot-1 .foot-1-back .foot-box .social .s-tw {
+    height: auto;
+    width: 40%;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.main .foot-1 .foot-1-back .foot-box .social .s-tw a {
+    text-decoration: none;
+    color: white;
+}
+
+.main .foot-1 .foot-1-back .foot-box .social .s-wi {
+    height: auto;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.main .foot-1 .foot-1-back .foot-box .social .s-wi a {
+    text-decoration: none;
+    color: white;
+}
+
+.main .foot-1 .foot-1-back .foot-box .social a:first-child {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .foot-1 .foot-1-back .foot-box .social .s-tw-icon {
+    background-color: rgb(70, 212, 254);
+}
+
+.main .foot-1 .foot-1-back .foot-box .social .s-wi-icon {
+    background-color: rgb(255, 161, 51);
+}
+
+.main .foot-1 .foot-1-back .foot-box .social p {
+    padding-left: 40px;
+}
+
+.main .foot-1 .foot-1-back .foot-box .social p span {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.main .foot-1 .foot-1-back .foot-box .social p span:hover {
+    color: rgb(255, 210, 95);
+}
+
+.main .foot-1 .foot-1-back .foot-box .text-enf p:first-child {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    line-height: 25px;
+}
+
+.main .foot-1 .foot-1-back .foot-box .text-enf p {
+    font-size: 15px;
+}
+
+.main .foot-1 .foot-1-back .foot-box .text-off p {
+    line-height: 25px;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.main .foot-1 .foot-1-back .foot-box .b-pr-box {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.main .foot-1 .foot-1-back .foot-box .b-pr-box a {
+    text-decoration: none;
+    color: white;
+}
+
+.main .foot-1 .foot-1-back .foot-box .b-pr-box .pr-pic {
+    border: solid 4px rgb(91, 100, 107);
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+.main .foot-1 .foot-1-back .foot-box .b-pr-box .pr-la-t {
+    background-image: url('pics 1/house-interior-36x36.jpg');
+}
+
+.main .foot-1 .foot-1-back .foot-box .b-pr-box .pr-la-m {
+    background-image: url('pics 1/architect-handling-keys-to-a-couple-36x36.jpg');
+}
+
+.main .foot-1 .foot-1-back .foot-box .b-pr-box .pr-la-b {
+    background-image: url('pics 1/urban-development-36x36.jpg');
+}
+
+.main .foot-1 .foot-1-back .foot-box .b-pr-box .b-pr-box-each {
+    padding-bottom: 15px;
+}
+.foot-lat-date {
+    font-size: 11.73px;
+    font-weight: 400;
+}
+
+.main .foot-1 .foot-1-back .foot-box .b-pr-box .b-pr-box-each p {
+    font-size: 15px;
+    padding-left: 45px;
+    line-height: 20px;
+    font-size: 12.75px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.main .foot .foot-2 {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(91, 100, 107);
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .foot .foot-2 .foot-2-back {
+    width: 1210px;
+    height: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .foot .foot-2 .foot-2-back .ft-2-l {
+    font-size: 11px;
+    color: white;
+}
+
+.main .foot .foot-2 .foot-2-back .ft-2-l a {
+    text-decoration: none;
+    color: white;
+}
+
+.main .foot .foot-2 .foot-2-back .ft-2-l a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.main .foot .foot-2 .foot-2-back .ft-2-r ul li {
+    list-style: none;
+    display: inline;
+    line-height: 45px;
+    padding-left: 20px;
+}
+
+.main .foot .foot-2 .foot-2-back .ft-2-r ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.main .foot .foot-2 .foot-2-back .ft-2-r ul li a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.go-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    position: fixed;
+    right: 50px;
+    top: 90%;
+    background-color: rgba(77, 86, 93, 0.789);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(151,156,160);
+}
+.go-top:hover{
+  color: orange;
+  background-color:  rgba(187, 189, 192, 0.789);
+}
+
+.and-shape {
+    color: var(--color-and);
+    font-family: askerville", "Palatino Linotype", "Palatino", "Times New Roman", serif;
+}
