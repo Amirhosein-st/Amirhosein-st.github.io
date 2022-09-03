@@ -138,6 +138,8 @@ html{
     font-weight: 600;
     padding: 13px 20px;
     border-left: 2px solid rgb(44, 49, 53);
+    position: relative;
+    z-index: 1500;
 }
 
 .head .menu .menuback li a:hover {
