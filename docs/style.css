@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.back-nav-class {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.back-nav-class .text {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    height: 200px;
+    text-align: center;
+}
+
+.back-nav-class .text span {
+    animation: heart 1s ease-in-out infinite ;
+    color: red;
+    font-weight: 600;
+    animation-direction: alternate-reverse;
+    
+}
+
+.back-nav-class .nav-class {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: bolder;
+}
+
+.back-nav-class .nav-class .button {
+    display: inline-block;
+    padding: 0.5em 2em;
+    background-color: rgb(0, 41, 136);
+    color: rgb(255, 247, 0);
+    text-decoration: none;
+    border-radius: 10px;
+    border-right: 2px solid rgb(255, 247, 0);
+    border-bottom: 3px solid rgb(255, 247, 0);
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+.back-nav-class .nav-class .button:hover {
+    color: black;
+    background: var(--clr);
+    letter-spacing: 0.05em;
+    transform: scale(1.05);
+}
+
+/* 000000000000000000000000000 */
+
+.background {
+    position: fixed;
+    inset: 0 -50% 0 -50%;
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image:
+        linear-gradient(45deg,
+            rgb(0, 41, 136) 50%,
+            rgb(255, 247, 0) 50%);
+    opacity: .5;
+    z-index: -1;
+}
+
+.b {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.c {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+@keyframes heart {
+    0% {
+        font-size: 30px;
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    100% {
+        font-size: 35px;
+        color: blue;
+    }
+}
+
+@media (max-width:500px) {
+    .back-nav-class .text {
+        font-size: 20px;
+    }
+
+    .back-nav-class .nav-class {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .back-nav-class .nav-class .button {
+        text-align: center;
+    }
+
+    .back-nav-class .text span {
+    animation: none;
+   }
+
+}
