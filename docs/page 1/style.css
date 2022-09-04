@@ -7,7 +7,7 @@
 :root {
     --color-subject: rgb(82, 89, 96);
     --color-c2: rgb(137, 142, 147);
-    --color-c3: rgb(174, 174, 174);
+    --color-c3: rgb(137, 137, 137);
     --color-after: rgb(240, 189, 40);
     --color-and: rgb(240, 189, 40);
 }
@@ -73,7 +73,7 @@ body {
 .head .logo .logoback .tw-dr .tw {
     color: gray;
     position: absolute;
-    right: 35px;
+    right: 30px;
 }
 
 .head .logo .logoback .tw-dr .tw i {
@@ -83,6 +83,7 @@ body {
     text-align: center;
     line-height: 30px;
     background-color: rgba(165, 42, 42, 0);
+    transition: 0.3s;
 }
 
 .head .logo .logoback .tw-dr .tw i:hover {
@@ -101,6 +102,7 @@ body {
     text-align: center;
     line-height: 30px;
     background-color: rgba(165, 42, 42, 0);
+    transition: 0.3s;
 }
 
 .head .logo .logoback .tw-dr .dr i:hover {
@@ -134,34 +136,41 @@ body {
 
 .head .menu .menuback li a {
     text-decoration: none;
-    color: rgb(230, 230, 230);
-    font-size: 13px;
+    color: rgb(226,230,230);
+    font-size: 14px;
     font-weight: 600;
     padding: 13px 20px;
+    z-index: 1000;
     border-left: 2px solid rgb(44, 49, 53);
-    z-index: 100;
     position: relative;
+}
+
+.head .menu .menuback .menu-services li a {
+    color: rgb(226,230,230);
+    transition: 0.5s;
+    padding-bottom: 2px;
 }
 
 .head .menu .menuback li a:hover {
     color: white;
-    transition: 0.2s;
 }
 
 .head .menu .ul-serv {
     width: 225px;
     height: auto;
     position: absolute;
-    left: 14.5%;
+    margin-left: 170px;
     background-color: rgb(44, 53, 61);
     flex-direction: column;
-    border: 1px solid rgb(44, 49, 53);
+    border-right: 2px  solid rgb(38, 42, 45);
+    border-left: 2px  solid rgb(38, 42, 45);
     display: none;
     z-index: 5;
 }
 
-.head .menu .menu-services:hover>a {
+.head .menu .menu-services:hover a {
     padding-bottom: 200px;
+    border-left: 2px solid transparent;
 }
 
 .head .menu .menu-services:hover .ul-serv {
@@ -206,6 +215,7 @@ body {
     right: 15px;
     top: 50px;
     z-index: 1100;
+    border-radius: 3px;
     display: none;
 }
 
@@ -225,8 +235,13 @@ body {
     width: 230px;
     height: 40px;
     padding-left: 8px;
+    font-size: 16px;
     border: none;
     background-color: rgb(248, 248, 248);
+}
+
+.head .search-back .search .search-box>input:focus{
+    outline: none;
 }
 
 .head .search-back .search .search-box>a>i {
@@ -237,6 +252,11 @@ body {
     background-color: rgb(255, 211, 81);
     color: white;
     font-size: 14px;
+    transition: 0.5s;
+}
+
+.head .search-back .search .search-box>a>i:hover{
+    background-color: black;
 }
 
 #checkbox_search[type=checkbox]:checked~.search-box {
@@ -255,6 +275,7 @@ input[type=checkbox] {
     right: 165px;
     user-select: none;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .hamburger::after {
@@ -282,7 +303,8 @@ input[type=checkbox] {
 }
 
 .head .menu2 ul {
-    padding: 50px 40px;
+    padding: 0 40px;
+    padding-top: 100px;
 }
 
 .head .menu2 ul li {
@@ -316,6 +338,7 @@ input[type=checkbox] {
     right: 168px;
     display: none;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .main-album {
@@ -534,12 +557,12 @@ input[type=checkbox] {
     content: '';
     height: 100%;
     width: 100%;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .main .OUR-SERVICES .services .serv-pic:hover::after {
     display: block;
-    background-color: rgba(255, 255, 255, 0.461);
+    background-color: rgba(255, 255, 255, 0.678);
 }
 
 .main .OUR-SERVICES .services .t-l-serv-pic {
@@ -570,7 +593,7 @@ input[type=checkbox] {
     position: absolute;
     top: 53%;
     font-size: 20px;
-    color: var(--color-c2);
+    color: rgb(27, 27, 27);
     font-weight: 300;
 }
 
@@ -769,7 +792,7 @@ input[type=checkbox] {
     background-size: cover;
     background-repeat: no-repeat;
     transform: scale(1);
-    transition: 0.6s;
+    transition: 0.7s;
 }
 
 .main .FEATURED-WORK .fea-back .featured .fea .fea-pic:hover {
@@ -806,7 +829,7 @@ input[type=checkbox] {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.27);
-    transition: 0.4s;
+    transition: 0.6s;
 }
 
 .main .FEATURED-WORK .fea-back .featured .fea .fea-pic:hover:after {
@@ -1078,6 +1101,7 @@ input[type=checkbox] {
 
 .foot-1 .foot-1-back .foot-box .social p {
     color: white;
+    width: 100px;
     padding-left: 40px;
 }
 
@@ -1229,14 +1253,16 @@ input[type=checkbox] {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(151, 156, 160);
+    color: rgb(255, 255, 255);
     border: 0;
+    cursor: pointer;
     display: none;
+    transition: 0.3s;
 }
 
 .go-top:hover {
     color: orange;
-    background-color: rgba(187, 189, 192, 0.789);
+    background-color: rgba(230, 230, 230, 0.789);
 }
 
 .and-shape {
@@ -1247,6 +1273,10 @@ input[type=checkbox] {
 
 
 @media (max-width: 990px) {
+
+    .main .FEATURED-WORK .fea-back .featured .fea {
+        height: 250px;
+    }
 
     .flash {
         top: 510px;
@@ -1310,6 +1340,38 @@ input[type=checkbox] {
         position: absolute;
         top: 50px;
         width: 35%;
+    }
+
+    .main .CUSTOMERS-PARTNERS {
+        top:360px;
+    }
+
+    .main .CUSTOMERS-PARTNERS .cus-back .customers .cus {
+        width: 48%;
+    }
+
+    .main .CUSTOMERS-PARTNERS .cus-back {
+        top: 250px;
+    }
+    .foot{
+top: 650px;
+    }
+
+    .foot .foot-1 {
+        height: 510px;
+    }
+
+    .foot-1 .foot-1-back .foot-box .social .s-tw:first-child {
+        width: auto;
+    }
+
+    .foot-1 .foot-1-back .foot-box .social .s-wi {
+        top: 150%;
+        left: 0;
+    }
+
+    .foot-1 .foot-1-back .foot-box .social .s-wi:last-child {
+        width: auto;
     }
 }
 
@@ -1490,6 +1552,10 @@ input[type=checkbox] {
     .foot-1 .foot-1-back .foot-box .social .s-wi {
         top: 0;
         left: 50%;
+    }
+
+    .foot .foot-2 .foot-2-back .ft-2-r ul li:first-child{
+        padding-left: 5px;
     }
 
     .go-top {
