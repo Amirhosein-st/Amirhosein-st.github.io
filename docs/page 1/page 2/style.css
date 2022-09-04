@@ -25,7 +25,7 @@ body {
     font-family: 'my-font-1';
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -72,7 +72,7 @@ html{
 .head .logo .logoback .tw-dr .tw {
     color: gray;
     position: absolute;
-    right: 35px;
+    right: 30px;
 }
 
 .head .logo .logoback .tw-dr .tw i {
@@ -82,6 +82,7 @@ html{
     text-align: center;
     line-height: 30px;
     background-color: rgba(165, 42, 42, 0);
+    transition: 0.3s;
 }
 
 .head .logo .logoback .tw-dr .tw i:hover {
@@ -100,6 +101,7 @@ html{
     text-align: center;
     line-height: 30px;
     background-color: rgba(165, 42, 42, 0);
+    transition: 0.3s;
 }
 
 .head .logo .logoback .tw-dr .dr i:hover {
@@ -152,16 +154,19 @@ html{
     width: 225px;
     height: auto;
     position: absolute;
-    left: 14.5%;
+    margin-left: 170px;
     background-color: rgb(44, 53, 61);
     flex-direction: column;
-    border: 1px solid rgb(44, 49, 53);
+    border-right: 2px  solid rgb(38, 42, 45);
+    border-left: 2px  solid rgb(38, 42, 45);
     display: none;
     z-index: 5;
 }
 
-.head .menu .menu-services:hover >a{
+.head .menu .menu-services:hover>a {
     padding-bottom: 200px;
+    border-left: 2px solid transparent;
+    
 }
 
 .head .menu .menu-services:hover .ul-serv {
@@ -207,6 +212,7 @@ html{
     right: 15px;
     top: 50px;
     z-index: 1100;
+    border-radius: 3px;
     display: none;
 }
 
@@ -226,8 +232,13 @@ html{
     width: 230px;
     height: 40px;
     padding-left: 8px;
+    font-size: 16px;
     border: none;
     background-color: rgb(248, 248, 248);
+}
+
+.head .search-back .search .search-box>input:focus{
+    outline: none;
 }
 
 .head .search-back .search .search-box>a>i {
@@ -238,6 +249,11 @@ html{
     background-color: rgb(255, 211, 81);
     color: white;
     font-size: 14px;
+    transition: 0.5s;
+}
+
+.head .search-back .search .search-box>a>i:hover{
+    background-color: black;
 }
 
 #checkbox_search[type=checkbox]:checked~.search-box {
@@ -256,6 +272,7 @@ input[type=checkbox] {
     right: 165px;
     user-select: none;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .hamburger::after {
@@ -283,7 +300,8 @@ input[type=checkbox] {
 }
 
 .head .menu2 ul {
-    padding: 50px 40px;
+    padding: 0 40px;
+    padding-top: 100px;
 }
 
 .head .menu2 ul li {
@@ -317,6 +335,7 @@ input[type=checkbox] {
     right: 168px;
     display: none;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .main {
@@ -335,9 +354,10 @@ input[type=checkbox] {
 
 .main .main-pic .pic {
     width: 100%;
-    height: 500px;
+    height: 650px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.450), rgba(0, 0, 0, 0.450)), url('../pics 1/house-interior-1500x863.jpg');
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -358,10 +378,11 @@ input[type=checkbox] {
 
 .main .main-pic .back-content .content p {
     font-size: 40px;
-    font-weight: 400;text-align: center;
+    font-weight: 400;
+    text-align: center;
 }
 
-.main .main-pic .back-content .content .yell-line-main-pic{
+.main .main-pic .back-content .content .yell-line-main-pic {
     width: 55px;
     height: 1px;
     margin: 20px 45%;
@@ -371,8 +392,8 @@ input[type=checkbox] {
 .flash {
     width: 100px;
     height: 100px;
-    top: 570px;
     position: absolute;
+    top: 710px;
     overflow: hidden;
 }
 
@@ -445,7 +466,7 @@ input[type=checkbox] {
     border-bottom: 2px solid rgb(239, 187, 32);
 }
 
-.main  .top-main .content p {
+.main .top-main .content p {
     line-height: 25px;
     font-size: 15px;
     color: var(--color-c2);
@@ -878,20 +899,22 @@ input[type=checkbox] {
     border-radius: 5px;
     position: fixed;
     right: 50px;
-    top: 90%;
+    bottom: 5%;
     background-color: rgba(77, 86, 93, 0.789);
-    z-index: 990;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(151, 156, 160);
-    border: none;
+    color: rgb(255, 255, 255);
+    border: 0;
+    cursor: pointer;
     display: none;
+    transition: 0.3s;
 }
 
 .go-top:hover {
     color: orange;
-    background-color: rgba(187, 189, 192, 0.789);
+    background-color: rgba(230, 230, 230, 0.789);
 }
 
 .and-shape {
@@ -1008,19 +1031,19 @@ input[type=checkbox] {
 }
 
 @media (max-width:1235px) {
-    .foot .foot-1{
+    .foot .foot-1 {
         height: 352px;
-        top: 133px ;
+        top: 133px;
     }
 
-    .foot .foot-2{
+    .foot .foot-2 {
         top: 133px;
     }
 }
 
 @media (max-width: 990px) {
     .flash {
-        top: 510px;
+        top: 660px;
     }
 
     .hamburger {
@@ -1081,20 +1104,20 @@ input[type=checkbox] {
         top: 52px;
     }
 
-    .foot .foot-1{
+    .foot .foot-1 {
         height: 510px;
     }
 
-    .foot-1 .foot-1-back .foot-box .social .s-tw:first-child{
+    .foot-1 .foot-1-back .foot-box .social .s-tw:first-child {
         width: auto;
     }
 
     .foot-1 .foot-1-back .foot-box .social .s-wi {
-        top:150% ;
+        top: 150%;
         left: 0;
     }
 
-    .foot-1 .foot-1-back .foot-box .social .s-wi:last-child{
+    .foot-1 .foot-1-back .foot-box .social .s-wi:last-child {
         width: auto;
     }
 }
@@ -1104,7 +1127,7 @@ input[type=checkbox] {
         background-size: 170px;
         left: -20px;
     }
-    
+
     .hover1 {
         display: none;
     }
@@ -1191,7 +1214,7 @@ input[type=checkbox] {
     .foot {
         top: 1725px;
     }
-    
+
     .foot-1 .foot-1-back {
         display: flex;
         flex-direction: column;
@@ -1219,7 +1242,7 @@ input[type=checkbox] {
     .foot .foot-2 {
         top: 330px;
         height: auto;
-        
+
     }
 
     .foot .foot-2 .foot-2-back {
@@ -1231,7 +1254,7 @@ input[type=checkbox] {
         padding-top: 20px;
     }
 
-    .foot-1 .foot-1-back .foot-box .social .s-wi  {
+    .foot-1 .foot-1-back .foot-box .social .s-wi {
         top: 0;
         left: 50%;
     }
@@ -1243,6 +1266,14 @@ input[type=checkbox] {
 }
 
 @media (max-width:500px) {
+    .main .main-pic .pic {
+        height: 330px;
+    }
+
+    .flash {
+        top: 340px;
+    }
+
     .head .logo .logoback .tw-dr {
         display: none;
     }
@@ -1257,7 +1288,7 @@ input[type=checkbox] {
         font-size: 18px;
     }
 
-    .head .search-back .search .search-box{
+    .head .search-back .search .search-box {
         right: 15px;
     }
 
@@ -1266,13 +1297,14 @@ input[type=checkbox] {
     }
 
     .hamburger {
-        right:5% ;
+        right: 5%;
     }
 
     .search>i {
         right: 8%;
         font-size: 20px;
     }
+
     .main .main-pic .back-content .content p {
         font-size: 32px;
         padding-left: 30px;
