@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
-
+@font-face {
+    font-family: 'Iranian-Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('Iranian-Sans/Iranian-Sans.eot');
+    src: url('Iranian-Sans/Iranian-Sans.eot?#iefix') format('embedded-opentype'),
+         url('Iranian-Sans/Iranian-Sans.woff2') format('woff2'),
+         url('Iranian-Sans/Iranian-Sans.woff') format('woff'),
+         url('Iranian-Sans/Iranian-Sans.ttf') format('truetype');
+         }
 
 .back-nav-class {
     height: 100vh;
@@ -16,7 +25,8 @@
 
 .back-nav-class .text {
     width: 100%;
-    font-size: 30px;
+    font-family: Iranian-Sans;
+    font-size: 23px;
     font-weight: 500;
     height: 200px;
     text-align: center;
@@ -35,10 +45,12 @@
     left: 50%;
     transform: translate(-50%, 0);
     font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
 }
 
 .back-nav-class .nav-class .button {
-    display: inline-block;
     padding: 0.5em 2em;
     background-color: rgb(0, 41, 136);
     color: rgb(255, 247, 0);
@@ -54,7 +66,7 @@
     color: black;
     background: var(--clr);
     letter-spacing: 0.05em;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 /* 000000000000000000000000000 */
@@ -107,7 +119,7 @@
 
 @media (max-width:500px) {
     .back-nav-class .text {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .back-nav-class .nav-class {
