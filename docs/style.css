@@ -5,15 +5,9 @@
 }
 
 @font-face {
-    font-family: 'Iranian-Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('Iranian-Sans/Iranian-Sans.eot');
-    src: url('Iranian-Sans/Iranian-Sans.eot?#iefix') format('embedded-opentype'),
-         url('Iranian-Sans/Iranian-Sans.woff2') format('woff2'),
-         url('Iranian-Sans/Iranian-Sans.woff') format('woff'),
-         url('Iranian-Sans/Iranian-Sans.ttf') format('truetype');
-         }
+    font-family: 'my-font-1';
+    src: url('https://fonts.gstatic.com/s/metrophobic/v19/sJoA3LZUhMSAPV_u0qwiAQ-O5X8.woff2');
+}
 
 .back-nav-class {
     height: 100vh;
@@ -25,8 +19,8 @@
 
 .back-nav-class .text {
     width: 100%;
-    font-family: Iranian-Sans;
-    font-size: 23px;
+    font-family: my-font-1;
+    font-size: 30px;
     font-weight: 500;
     height: 200px;
     text-align: center;
@@ -119,7 +113,7 @@
 
 @media (max-width:500px) {
     .back-nav-class .text {
-        font-size: 18px;
+        font-size: 23px;
     }
 
     .back-nav-class .nav-class {
