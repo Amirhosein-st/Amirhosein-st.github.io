@@ -419,7 +419,7 @@
 }
 
 #clock2 {
-    width: 60px;
+    width: auto;
     height: auto;
     color: black;
     position: absolute;
