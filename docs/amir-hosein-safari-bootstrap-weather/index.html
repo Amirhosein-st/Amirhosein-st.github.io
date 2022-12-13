@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="pics/weather.png">
+
+    <script src="https://kit.fontawesome.com/2e4a6d166a.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <title>Weather 2</title>
+
+</head>
+
+<body>
+
+    <div class="go-home">
+        <a href="../index.html" class="home-link"> <i class="fa-solid fa-house" id="home-icon"
+                title="Go Home"></i></a>
+    </div>
+    
+    <div class="container mt-5">
+
+        <div id="search-method22" class="my-3 border col-12">
+            <div class="row text-center py-3">
+                <h3 class="">Choose Your Search Method:</h3>
+                <div class="col-lg-6 col-sm-6">
+                    <button id="btncity" class="btn btn-outline-success px-4 my-2 fs-5">With City Name</button>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <button id="btncoord" class="btn btn-outline-success px-4 my-2 fs-5">With Geo Coord</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="back-search-city" class="border p-3 col-12 ">
+            
+            <h4 class="">Type Your City Here!</h4>
+
+            <input id="input-add-City" class="form-control form-control-lg " type="text" placeholder="Type Your City / شهر خود را وارد کنید">
+
+            <button id="btn-add-City" class="mt-2 mx-2 btn btn-outline-primary ">Set Just This City</button>
+            <button id="btn-add-other-City" class="mt-2 mx-2 btn btn-outline-success ">Add To Other City</button>
+            <button id="current-city" class="mt-2 btn btn-outline-danger">Get Current City</button>
+
+            <i class="fa-solid fa-delete-left delete-value" id="delete-input-value"></i>
+
+            <button id="btn-chnage-to-coord" class="mt-2 btn btn-outline-warning mx-5">Change Search Method To Geo Coord</button>
+
+        </div>
+
+        <div id="back-search-coord" class="border p-3 col-12 container mt-3">
+
+            <h4 class="">Type Geographical Coordinates!</h4>
+
+            <div class="row">
+            <input id="input-lon" class="form-control form-control-lg w-50" type="text" placeholder="lon / طول">
+            <input id="input-lat" class="form-control form-control-lg w-50" type="text" placeholder="lat / عرض">
+            </div>
+
+            <button id="btn-add-City2" class="mt-2 mx-2 btn btn-outline-primary ">Set Just This City</button>
+            <button id="btn-add-other-City2" class="mt-2 mx-2 btn btn-outline-success ">Add To Other City</button>
+            <button id="current-location" class="mt-2 btn btn-outline-danger">Get Current Location</button>
+
+            <i class="fa-solid fa-delete-left val-1"></i>
+            <i class="fa-solid fa-delete-left val-2"></i>
+
+            <button id="btn-chnage-to-city" class="mt-2 mx-5 btn btn-outline-warning ">Change Search Method To City Name</button>
+
+        </div>
+
+        <div id="buttons" class="container border col-11 mt-4">
+            <div class="my-3">
+                <div class="row text-center py-3">
+                    <h3 class="">Change Language:</h3>
+                    <div class="col-lg-6 col-sm-6">
+                        <button title="Persian" id="persian"
+                            class="btn btn-outline-warning text-dark px-4 my-2 fs-5">فارسی</button>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <button title="English" id="English"
+                            class="btn btn-outline-warning text-dark px-4 my-2 fs-5">English</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container col-8 my-3 border">
+                <div class="row text-center py-3">
+                    <div class="col-12">
+                        <button title="Clear All City" id="clear-all" class="btn btn-danger px-4 fs-5">Clear All
+                            City</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="weather-back" class="border p-3 col-10 container my-5">
+
+            <div title="English lang" id="english-page" class="card text-center col-12 ">
+
+            </div>
+
+            <div title="Persian lang" id="persian-page" class="card text-center col-12 ">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="alerts">
+
+        <div class="alert-empty-city bg-warning">
+            <h1 class="alert-head">Alert</h1>
+            <p class="alert-text">Type Your City !</p>
+            <button class="alert-btn1 btn btn-outline-success mb-3">OK</button>
+        </div>
+
+        <div class="alert-empty-geo bg-warning">
+            <h1 class="alert-head">Alert</h1>
+            <p class="alert-text">Type Your Geo Coord !</p>
+            <button class="alert-btn2 btn btn-outline-success mb-3">OK</button>
+        </div>
+
+        <div class="del-all">
+            <h1 class="alert-head">Alert</h1>
+            <p class="alert-text">Do You Want Clear All City ?</p>
+            <div class="btns">
+                <button class="alert-btn3 btn  btn-outline-danger mb-3">CANCEL</button>
+                <button class="alert-btn4 btn btn-outline-success px-4 mb-3">YES</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

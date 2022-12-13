@@ -1,0 +1,183 @@
+#persian-page {
+    display: none;
+}
+
+#back-search-city {
+    position: relative;
+    display: none;
+}
+#back-search-coord {
+    position: relative;
+    display: none;
+}
+
+#weather-back {
+    display: none;
+}
+
+.delete-value , .val-1 , .val-2{
+    position: absolute;
+    right: 30px;
+    top: 65px;
+    font-size: 22px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.2s;
+}
+.delete-value:hover {
+    transform: scale(1.2);
+    color: red;
+}
+.val-1 {
+    right: 51.5%;
+}
+.val-1:hover {
+    transform: scale(1.2);
+    color: red;
+}
+.val-2:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+#buttons {
+    display: none;
+}
+
+#icon-img {
+    width: 150px;
+}
+
+/* go home btn */
+.go-home {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50% , 0);
+}
+
+.home-link {
+    text-decoration: none;
+    color: black;
+}
+
+.home-link #home-icon {
+    outline: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    transform: scale(1);
+}
+.home-link #home-icon:hover {
+    color: #0042cf;
+    outline: 1px solid aqua;
+    transform: scale(1.2);
+}
+
+
+/* alerts */
+.alerts {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Alert Empty */
+.alerts .alert-empty-city {
+    width: 250px;
+    height: auto;
+    background-color: #faeef7;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid red;
+}
+
+.alerts .alert-empty-city .alert-head {
+    font-size: 30px;
+    padding-top: 7%;
+    padding-bottom: 4%;
+}
+
+.alerts .alert-empty-city .alert-text {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 4%;
+    border-bottom: 0.5px solid rgba(255, 0, 0, 0.451);
+}
+
+
+/* already Exist */
+
+.alerts .alert-empty-geo {
+    width: 350px;
+    height: auto;
+    background-color: #faeef7;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid red;
+}
+
+.alerts .alert-empty-geo .alert-head {
+    font-size: 30px;
+    padding-top: 7%;
+    padding-bottom: 4%;
+}
+
+.alerts .alert-empty-geo .alert-text {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 4%;
+    border-bottom: 0.5px solid rgba(255, 0, 0, 0.451);
+}
+
+/* del All task */
+
+.alerts .del-all {
+    width: 80%;
+    height: auto;
+    background-color: #faeef7;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid red;
+
+}
+
+.alerts .del-all .alert-head {
+    font-size: 30px;
+    padding-top: 7%;
+    padding-bottom: 4%;
+}
+
+.alerts .del-all .alert-text {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 4%;
+    border-bottom: 0.5px solid rgb(157, 157, 157);
+}
+
+.alerts .del-all .btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
