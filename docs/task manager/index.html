@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2e4a6d166a.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="pics/clipboard.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <div class="phone">
+
+        <div class="go-home">
+            <a href="../index.html" class="home-link"> <i class="fa-solid fa-house" id="home-icon" title="Go Home"></i></a>
+            <p>Go Home</p>
+        </div>
+
+        <img class="phone-pic" src="pics/iphone.jpg" alt="">
+        <button class="home-button"></button>
+        <button class="power-button"></button>
+        
+        <div class="home">
+            <p id="clock"></p>
+            <img class="home-phone" src="pics/home.jpg" alt="">
+            <a href="#"><img class="note-icon" src="pics/note-icon.jpg" alt=""></a>
+        </div>
+
+        <div class="note">
+            <div class="date-time">
+                <p id="date2"></p>
+                <p id="clock2"></p>
+            </div>
+
+            <div class="icons">
+                <div class="claer-all">
+                    <p>Clear All</p><i class="fa-sharp fa-solid fa-trash clear-all-task"></i>
+                </div>
+                <div class="add-task">
+                    <p>Add Task</p><i class="fa-solid fa-pen-to-square btn-add-task"></i>
+                </div>
+                <div class="search-task">
+                    <p>Search Task</p><i class="fa-solid fa-magnifying-glass btn-serach-task"></i>
+                </div>
+            </div>
+
+            <div class="inputs">
+                <div class="back-task-input">
+                    <input type="text" class="task-input" placeholder="Type Your Task">
+                    <i class="fa fa-times earase" title="Clear Input"></i>
+                    <i class="fa-sharp fa-solid fa-plus btn-add" title="Button Add Task"></i>
+                </div>
+                <div class="back-search-task">
+                    <input type="text" id="search-task2" class="search-task" placeholder="Search Your Task">
+                </div>
+            </div>
+
+            <div class="tasks">
+                <ul>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="lock">
+            <img class="lock-pic" src="pics/lock-screen.jpg" alt="">
+            <p id="clock1"></p>
+            <p id="date"></p>
+        </div>
+
+        <div class="alerts">
+
+            <div class="alert-empty">
+                <h1 class="alert-head">Alert</h1>
+                <p class="alert-text">Type Your Task</p>
+                <button class="alert-btn1">OK</button>
+            </div>
+
+            <div class="already-exist">
+                <h1 class="alert-head">Alert</h1>
+                <p class="alert-text">You Currently Have This Task !</p>
+                <button class="alert-btn2">OK</button>
+            </div>
+
+            <div class="del-all">
+                <h1 class="alert-head">Alert</h1>
+                <p class="alert-text">Do You Want Clear All Tasks ?</p>
+                <div class="btns">
+                    <button class="alert-btn3">CANCEL</button>
+                    <button class="alert-btn4">YES</button>
+                </div>
+            </div>
+            <div class="task-empty">
+                <h1 class="alert-head">Alert</h1>
+                <p class="alert-text">You Haven`t Any Task!</p>
+                <button class="alert-btn5">OK</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
