@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2e4a6d166a.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="pics/weather.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    
+    <div class="phone">
+
+        <div class="go-home">
+            <a href="../index.html" class="home-link"> <i class="fa-solid fa-house" id="home-icon"
+                    title="Go Home"></i></a>
+            <p>Go Home</p>
+        </div>
+
+        <img class="phone-pic" src="pics/iphone.jpg" alt="">
+        <button class="home-button" title="Go Home Screen"></button>
+        <button class="power-button" title="Lock Screen"></button>
+
+        <div class="home">
+            <p id="clock"></p>
+            <img class="home-phone" src="pics/home.jpg" alt="">
+            <a href="#" title="Go Wheather App"><img class="weather-icon" src="pics/wheather-icon.jpg" alt=""></a>
+        </div>
+
+        <div class="weather">
+
+            <div class="date-show">
+                <p id="date2"></p>
+                <p id="clock2"></p>
+            </div>
+
+            <div class="search-input">
+                <p for="search-city" class="ti-search-city">Search City:</p>
+                <input name="search-city" type="text" id="search-city-id" class="search-city" placeholder="Search"
+                    title="Type City">
+                <i class="fa fa-times remove-input-value"></i>
+                <button class="plus" title="Search Button"><i class="fa-solid fa-plus" title="Add City"></i></button>
+
+                <div class="loc-back">
+                    <p class="loc-text">Search Current Location:</p>
+                    <button class="loc-btn"><i class="fa-solid fa-location-dot loc-icon"></i></button>
+                </div>
+            </div>
+
+            <div class="change-city">
+                <p class="ch-city">Change City</p>
+                <button class="change " title="Change Your City"><i class="fa-solid fa-eraser  "></i></button>
+            </div>
+
+            <div class="show-weather">
+
+            </div>
+
+            <div class="more-btns">
+                <div class="day-night"></div>
+                <button title="Read Detail" class="read-detaile" ><i class="fa-solid fa-microphone"></i></button>
+                <button title="See This Loacation On Map" id="map-btn"><i class="fa-solid fa-map-location-dot"></i></button>
+            </div>
+
+        </div>
+
+        <div class="back-map">
+
+            <div id="map"></div>
+
+            <button class="go-backk"><i class="fa-solid fa-arrow-left"></i></button>
+
+        </div>
+
+        <div class="lock">
+            <img class="lock-pic" src="pics/lock-screen.jpg" alt="">
+            <p id="clock1"></p>
+            <p id="date"></p>
+        </div>
+
+        <div class="alerts">
+            <div class="alert-empty">
+                <h1 class="alert-head">Alert</h1>
+                <p class="alert-text">Type Your City</p>
+                <button class="alert-btn1">OK</button>
+            </div>
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
