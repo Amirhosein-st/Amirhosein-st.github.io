@@ -76,8 +76,28 @@
 .term-2 {
     font-size: 25px;
     position: relative;
-    bottom: 20px;
+    bottom: 30px;
     font-weight: bold;
+}
+
+#btn0 {
+    position: relative;
+    left: 10px;
+}
+
+#btn1 {
+    position: relative;
+    left: 10px;
+}
+
+#btn2 {
+    position: relative;
+    top: 50px;
+}
+
+#btn3 {
+    position: relative;
+    top: 50px;
 }
 
 /* back ground */
@@ -154,7 +174,30 @@
     }
 
     .term-2 {
-        bottom: 10px;
+        bottom: 0px;
     }
 
+    #btn0 {
+        position: relative;
+        top: 10%;
+    }
+
+    #btn1 {
+        position: relative;
+        top: 10%;
+    }
+    
+    #btn1 {
+        position: relative;
+        left: 10px;
+    }
+
+    #btn00 {
+        position: relative;
+        bottom:  60px;
+    }
+    #btn11 {
+        position: relative;
+        bottom:  60px;
+    }
 }
