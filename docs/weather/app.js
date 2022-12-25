@@ -92,12 +92,7 @@ btnHome.onclick = function () {
 
 }
 btnWheatherIcon.onclick = function () {
-    homeScreen.style.display = 'none';
-    weatherScreen.style.display = 'block';
-    lockScreen.style.display = 'none';
-    pageMoreBtns.style.display = 'none';
-    pageMap.style.display = 'none';
-    weatherPage.style.display = 'flex';
+   window.location.reload();
 }
 
 // remove input value
