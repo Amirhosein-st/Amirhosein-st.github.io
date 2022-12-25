@@ -856,7 +856,7 @@ width: 35px;
 
     /* weather App - show weather - change city*/
     .change-city {
-        width: 80px;
+        width: auto;
         top: 17%;
     }
 
