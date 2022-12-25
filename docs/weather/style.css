@@ -894,8 +894,9 @@ width: 35px;
     }
 
     .weather .show-weather .cloud {
-        font-size: 25px;
+        font-size: 18px;
         padding-top: 7px;
+        text-align: center;
     }
 
     .weather .show-weather .weather-icon {
