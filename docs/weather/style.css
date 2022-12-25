@@ -453,9 +453,9 @@
 /* weather App - show weather - weather*/
 .weather .show-weather .last_updated {
     position: absolute;
-    font-size: 15px;
+    font-size: 20px;
     padding-left: 10px;
-    top: -3.9%;
+    top: -5%;
     left: 0;
     font-weight: bold;
     user-select: none;
@@ -601,7 +601,7 @@ width: 35px;
 
 .read-detaile {
     position: absolute;
-    top: 40%;
+    top: 42%;
     right: 3%;
     font-size: 25px;
     width: 40px;
