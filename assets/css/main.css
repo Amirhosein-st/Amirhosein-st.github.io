@@ -31,6 +31,10 @@
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+a {
+    color: white;
+    text-decoration: none;
+}
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -1126,6 +1130,7 @@ body {
     place-items: center;
     border-radius: 5px;
     transform: scale(1);
+    text-align: center;
 }
 
 .Work-secs:hover {
