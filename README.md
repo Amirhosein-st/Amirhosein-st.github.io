@@ -2,6 +2,8 @@
 
 Personal portfolio website showcasing my skills, experience, and projects as a Full Stack Developer.
 
+🌐 **Live Site:** [https://amirhosein-st.github.io](https://amirhosein-st.github.io)
+
 ## 🚀 Technologies Used
 
 - **React 19** - Modern UI library
@@ -10,6 +12,7 @@ Personal portfolio website showcasing my skills, experience, and projects as a F
 - **Tailwind CSS 4** - Utility-first CSS framework
 - **Framer Motion** - Animation library
 - **Lucide React** - Icon library
+- **PWA Support** - Progressive Web App capabilities
 
 ## 📦 Installation
 
@@ -45,6 +48,10 @@ Preview production build:
 npm run preview
 ```
 
+## 🚀 Deployment
+
+The site is deployed using GitHub Pages on the `gh-pages` branch. The deployment is automatically generated from the production build.
+
 ## 📄 License
 
 © 2025 Amir-Hosein Safari. All rights reserved.
@@ -52,4 +59,3 @@ npm run preview
 ## 📧 Contact
 
 Feel free to reach out for collaborations or opportunities!
-
