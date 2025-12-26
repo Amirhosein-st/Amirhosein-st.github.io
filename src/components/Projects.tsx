@@ -2,40 +2,48 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Folder } from 'lucide-react';
 
+// Import images
+import braingomoImg from '../assets/images/braingomo.png';
+import virgobitImg from '../assets/images/virgobit.png';
+import boothVirgobitImg from '../assets/images/booth virgobit.png';
+import reactNativeImg from '../assets/images/reactNative.png';
+import karyarImg from '../assets/images/karyar.png';
+import shahabxandyImg from '../assets/images/shahabxandy.png';
+
 const projects = [
   {
     title: 'Braingomo',
     tech: ['Angular', 'Node.js'],
     live: 'https://braingomo.com/home',
-    image: 'src/assets/images/braingomo.png'
+    image: braingomoImg
   },
   {
     title: 'Virgobit',
     tech: ['js', 'bootstrap'],
     live: 'https://virgobit.com/',
-    image: 'src/assets/images/virgobit.png'
+    image: virgobitImg
   },
   {
     title: 'booth Virgobit',
     tech:  ['js', 'bootstrap'],
     live: 'https://virgobit.com/digitalbooth.html',
-    image: 'src/assets/images/booth virgobit.png'
+    image: boothVirgobitImg
   },
   {
     title: 'mobile app',
     description: 'clone spotify - live price',
     tech:  ['React Native'],
-    image: 'src/assets/images/reactNative.png'
+    image: reactNativeImg
   },
   {
     title: 'Karyar Panel',
     tech:  ['react', 'bootstrap'],
-    image: 'src/assets/images/karyar.png'
+    image: karyarImg
   },
   {
     title: 'Personal Website(Shahab)',
     tech:  ['js', 'bootstrap'],
-    image: 'src/assets/images/shahabXandy.png'
+    image: shahabxandyImg
   }
 ];
 
