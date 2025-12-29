@@ -14,7 +14,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    // viteSingleFile(), // Disabled for GitHub Pages deployment
+    viteSingleFile(),
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "assets/images/logo.png"],
