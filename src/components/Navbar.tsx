@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 import logo from '../assets/images/logo.png';
+import { generatePDF } from '../utils/pdfGenerator';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,6 +51,16 @@ const Navbar: React.FC = () => {
                 {link.name}
               </motion.a>
             ))}
+            <motion.button
+              onClick={generatePDF}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navLinks.length * 0.1 }}
+              className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-700 transition-all hover:shadow-lg hover:shadow-blue-500/30"
+            >
+              <Download size={18} />
+              Download CV
+            </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,6 +93,16 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
+            <button
+              onClick={() => {
+                generatePDF();
+                setIsOpen(false);
+              }}
+              className="w-full flex items-center justify-center gap-2 px-3 py-3 mt-3 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-700 transition-all"
+            >
+              <Download size={18} />
+              Download CV
+            </button>
           </div>
         </motion.div>
       )}

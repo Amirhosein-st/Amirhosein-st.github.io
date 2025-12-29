@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github } from 'lucide-react';
+import { ArrowDown, Github, Download } from 'lucide-react';
 import introductionVisual from '../assets/images/introduction-visual.png';
 import introductionVisual2 from '../assets/images/introduction-visual-2.png';
 import introductionVisual3 from '../assets/images/introduction-visual-3.png';
+import { generatePDF } from '../utils/pdfGenerator';
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
@@ -99,6 +100,13 @@ const Hero: React.FC = () => {
               >
                 Check out my work
               </a>
+              <button 
+                onClick={generatePDF}
+                className="px-8 py-3 bg-transparent border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-md font-medium hover:bg-blue-600 hover:text-white dark:hover:text-white transition-all hover:shadow-lg hover:shadow-blue-500/30 flex items-center gap-2"
+              >
+                <Download size={20} />
+                Download CV
+              </button>
               <div className="flex items-center gap-4 ml-4">
                 <a href="https://github.com/Amirhosein-st?tab=repositories" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   <Github size={24} />

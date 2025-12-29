@@ -26,7 +26,7 @@ const About: React.FC = () => {
                   My name is Amir Hosein Safari. I began my programming career in 2020 by learning JavaScript, React, and TypeScript, and later expanded my expertise to include Angular, Kotlin, and React Native. Early in my professional journey, I joined the Braingomo team as a Frontend Developer, where I contributed to the design and implementation of their website. Following that, I collaborated with the same team on developing the Virgobit website and related exhibition platforms.
                 </p>
                 <p>
-                  In 2023, I joined the Asā division at Agah Brokerage Company as a Frontend Developer, where my professional growth accelerated significantly. During this time, I also designed and developed several personal websites, mobile applications, and collaborative team projects.
+                  In 2023, I joined the Asa division at Agah Brokerage Company as a Frontend Developer, where my professional growth accelerated significantly. During this time, I also designed and developed several personal websites, mobile applications, and collaborative team projects.
                 </p>
                 <p>
                   To advance my skills as a Frontend and Mobile Developer aiming toward a senior level, I focused on learning various libraries, packages, and testing methodologies within these fields. Later, I became interested in backend development, particularly in Python and Node.js, and began actively learning and practicing them to broaden my technical capabilities.
